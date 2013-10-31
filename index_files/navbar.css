@@ -1,0 +1,14 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+    background-image:url(worn_dots.png);
+   
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.container{
+ max-width:1000px;   
+}
