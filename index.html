@@ -26,6 +26,55 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+    
+    
+    <style type="text/css" >
+        
+        #viddeo {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            padding-top: 0px;
+            height: 0;
+        }
+        #viddeo iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #portada{
+         background-image: url(img/P1100123.JPG);
+            width:600px;
+            height:100px;
+           
+            
+        }
+        
+        #img {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            padding-top: 0px;
+            height: 0;
+            margin-bottom:20px;
+            
+        }
+        
+        #img img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; 
+        }
+        
+        .ocho{
+            width:800px;
+        }
+    </style>
+    
+    
   </head>
 
   <body style="">
@@ -44,40 +93,115 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="http://getbootstrap.com/examples/navbar/#"><i class="icon-home"></i> Inicio</a></li>
-            <li><a href="http://getbootstrap.com/examples/navbar/#"><i class="icon-info"></i> Acerca</a></li>
-            <li><a href="http://getbootstrap.com/examples/navbar/#"><i class="icon-book"></i> Academia</a></li>
+<!--        <li class="active"><a href="index.html"><i class="icon-home"></i> Inicio</a></li>-->
+            <li><a href="acerca.html"><i class="icon-info"></i> Acerca</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown"><i class="icon-book"></i> Academia <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li class="dropdown-header">Grados</li>
+                <li><a href="academia/transicion.html">Transición </a></li>
+                <li><a href="academia/primero.html">Primero</a></li>
+                <li><a href="academia/segundo.html">Segundo</a></li>
+                  <li><a href="academia/tercero.html">Tercero</a></li>
+                  <li><a href="academia/cuarto.html">Cuarto</a></li>
+                  <li><a href="academia/quinto.html">Quinto</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Recursos</li>
+                <li><a href="http://getbootstrap.com/examples/navbar/#">Cronograma escolar 2013</a></li>
+                <li><a href="http://getbootstrap.com/examples/navbar/#">Horario 2013</a></li>
+                <li><a href="http://getbootstrap.com/examples/navbar/#">Manual de convivencia</a></li>
+                <li><a href="http://getbootstrap.com/examples/navbar/#">Manejo de intimidación y conflictos</a></li>
+              </ul>
+            </li>
+              <li class="dropdown">
+              <a href="http://getbootstrap.com/examples/navbar/#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-puzzle-piece"></i> Cultural <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li class="dropdown-header">Galerias</li>
+                  <li><a href="cultural/galeria.html">Galeria fotográfica</a></li>
+                  <li class="divider"></li>
+                <li><a href="cultural/bandamarcial.html">Banda marcial</a></li>
+                  <li><a href="cultural/ajedrez.html">Campeonato de Ajedrez</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Eventos</li>
+                  <li><a href="cultural/feriaciencia.html">Feria de la ciencia</a></li>
+                <li><a href="cultural/agenda.html">Agenda</a></li>
+              </ul>
+            </li>
             <li class="dropdown">
               <a href="http://getbootstrap.com/examples/navbar/#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-group"></i> Servicios <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="http://getbootstrap.com/examples/navbar/#">Action</a></li>
-                <li><a href="http://getbootstrap.com/examples/navbar/#">Another action</a></li>
-                <li><a href="http://getbootstrap.com/examples/navbar/#">Something else here</a></li>
+                <li><a href="sevicios/biblioteca.html">Biblioteca</a></li>
+                <li><a href="sevicios/psicologia.html">Psicologia</a></li>
+                <li><a href="sevicios/restaurante.html">Restaurante</a></li>
                 <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="http://getbootstrap.com/examples/navbar/#">Separated link</a></li>
-                <li><a href="http://getbootstrap.com/examples/navbar/#">One more separated link</a></li>
+                <li class="dropdown-header">Virtual</li>
+                <li><a href="sevicios/radio.html">Radio</a></li>
+                <li><a href="sevicios/tv.html">TV online</a></li>
               </ul>
             </li>
               
-              <li><a href="http://getbootstrap.com/examples/navbar/#"><i class="icon-phone"></i> Contactenos</a></li>
+              <li><a href="contacto.html"><i class="icon-phone"></i> Contacto</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="./index_files/index.html"><i class="icon-facebook"></i></a></li>
-            <li><a href="http://getbootstrap.com/examples/navbar-static-top/"><i class="icon-twitter"></i></a></li>
+            <li><a href="http://facebook.com/ietip"><i class="icon-facebook"></i></a></li>
+            <li><a href="http://twitter.com/ietip"><i class="icon-twitter"></i></a></li>
             <li><a href="http://getbootstrap.com/examples/navbar-fixed-top/"><i class="icon-rss"></i></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
 
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="http://getbootstrap.com/components/#navbar" role="button">View navbar docs »</a>
-        </p>
-      </div>
+        
+<!--
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                  <div id="img">
+                    <img src="img/P1100123.JPG" width="600px" height="300px">
+                </div>
+            </div>
+        </div>
+        
+-->
+                
+        
+        <div class="row">
+            <div class="col-md-6">
+                
+                <div id="viddeo">
+                <iframe width="640" height="360" src="//www.youtube.com/embed/WinyJ8beDos" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h2>Noticias</h2>
+                
+                <div>
+                    <h3>Admisiones 2014</h3>
+                    <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+                    </p>
+                    <p>
+                      <a class="btn  btn-primary" href="http://getbootstrap.com/components/#navbar" role="button">Leer más »</a>
+                    </p>
+                  </div>
+                <div>
+                    <h3>Entrega de 40 computadores </h3>
+                    <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+                    <p>
+                      <a class="btn btn-primary" href="http://getbootstrap.com/components/#navbar" role="button">Leer más »</a>
+                    </p>
+                  </div>
+            </div>
+          <div class="col-md-6">
+            <div class="row">
+                  <div class="col-md-6">
+                <iframe src="https://www.google.com/calendar/embed?title=Eventos&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ietip.tic%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FBogota" style=" border-width:0 " width="200" height="600" frameborder="0" scrolling="no"></iframe>
+                
+                </div>
+                  <div class="col-md-6"><a class="twitter-timeline" href="https://twitter.com/IETIP" data-widget-id="388676882155044864">Tweets por @IETIP</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+                </div>
+                </div>
+            </div>
+        </div>
 
     </div> <!-- /container -->
 
